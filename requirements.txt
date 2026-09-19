@@ -1,0 +1,9 @@
+transformers>=4.53.0
+torchcodec
+scipy
+matplotlib
+numpy
+pyyaml
+torch
+pandas
+
