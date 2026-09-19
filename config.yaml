@@ -1,0 +1,23 @@
+model:
+  checkpoint: facebook/vjepa2-vitl-fpc64-256
+  dino_checkpoint: facebook/dinov2-base
+  pooling: mean         
+  secondary_pooling: max
+  random_init_seed: 42
+
+data:
+  repo_id: nateraw/kinetics-mini
+  repo_type: dataset
+  revision: 9f4ed38128a355c352527209101be3e326471816
+  split: val
+  actions:
+    - archery
+    - bowling
+    - high_jump
+  selection: all
+  num_frames: 64
+
+perturbation:
+  bootstrap_seed: 21
+  bootstrap_n: 10000
+  shuffle_seed: 42
