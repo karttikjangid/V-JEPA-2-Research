@@ -1,5 +1,7 @@
 # Does V-JEPA 2 encode motion, or mostly appearance?
 
+**⚠️ See [erratum.md](erratum.md) for a correction regarding the freeze wording in this study.**
+
 V-JEPA 2 is a self-supervised video encoder. This study asks whether its frozen
 embeddings respond when a clip's temporal structure is destroyed. Take a clip,
 embed it, scramble time, embed it again, and measure how far the embedding moved
